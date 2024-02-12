@@ -14,6 +14,13 @@
 //N = 1 pontos
 //Resultado = 3 + (1*3) + (1*2) = 8 pontos
 
-void main(List<String> args) {
-  print("Hello World!");
+import 'dart:io';
+
+main() {
+  print("Entre com uma palavra para calcular seu valor:");
+  String? palavra = stdin.readLineSync();
+
+  var lista_palavra = palavra!.split('');
+
+  for (var letra in lista_palavra) {}
 }
