@@ -6,8 +6,9 @@ main() {
   numero!.replaceAll(' ', '');
   numero.replaceAll(RegExp('[^0-9]'), '');
 
-  List lista = numero.split('');
-  print(lista);
-  print(lista.runtimeType);
-  print(numero.runtimeType);
+  List<String> lista = numero.split('');
+  List<int> lista_int = lista.map(int.parse).toList();
+
+  print(lista_int);
+  print(lista_int.runtimeType);
 }
